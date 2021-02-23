@@ -82,6 +82,8 @@ public class Employe {
             case SATURDAY:
                 nombreDimanchesSamedis = nombreDimanchesSamedis + 1;
                 break;
+            default:
+                break;
         }
         int nbrJoursFeriesHorsWeekend = (int) Entreprise.joursFeries(d).stream()
                 .filter(localDate -> localDate.getDayOfWeek().getValue() <= DayOfWeek.FRIDAY.getValue()).count();
